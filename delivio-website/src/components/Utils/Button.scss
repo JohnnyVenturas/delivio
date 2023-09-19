@@ -1,0 +1,35 @@
+@import "./utils.scss";
+* {
+	box-sizing: border-box;
+	}
+
+.utils-default-button {
+	all:unset;
+	padding-inline:var(--sz-30);
+	display: flex;
+	align-items: center;
+	gap:var(--sz-10);
+	height:max-content;
+	cursor:pointer;
+}
+
+a {
+	all:unset;
+}
+
+
+.default-button {
+	font-size:var(--text-style-heading-40);
+	font-family:Lora;
+	color : var(--text-grey-700);
+
+}
+.pending-button{
+	color:var(--text-grey-200);
+}
+
+.active-button {
+	font-family:Lora;
+	color : black; 
+}
+

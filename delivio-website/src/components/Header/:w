@@ -1,0 +1,141 @@
+.header-right-section {
+	display: flex;
+	align-items: center;
+	gap:var(--sz-30);
+}
+.header {
+	padding-block:var(--sz-20);
+	position:sticky;
+	top:0;
+	background-color:white;
+	z-index:100;
+	border-bottom:solid 1px var(--clr-grey-200);
+}
+
+.header-title {
+	background-color:black;
+	color:var(--clr-primary-200);
+	padding-inline:var(--sz-30);
+	padding-block:var(--sz-20);
+	border-radius:10px;
+	width:fit-content;
+
+
+}
+
+.header-nav-desktop {
+	display: grid;
+	grid-template-columns: 1fr repeat(2, minmax(1rem, max-content));
+	align-items: center;
+	justify-content: end; 
+	padding-inline: var(--sz-50);
+	margin: auto;
+	width: min(100%, 1400px);
+	position:sticky;
+	top:0;
+}
+
+.header-middle-section {
+	display: flex;
+	width:100%;
+}
+
+
+.header-nav-mobile {
+	visibility: none;
+	display: none;
+}
+
+@media (max-width: 1000px) {
+	.header-nav-desktop {
+		position: fixed;
+		transform: translateY(-200%);
+	}
+	.header-nav-mobile {
+		visibility: initial;
+		display: flex;
+		transform: initial;
+		padding: var(--sz-30);
+		position: relative;
+		margin: auto;
+	}
+
+	.header-nav-mobile-wrapper[aria-expanded="true"] {
+		position: fixed;
+		z-index: 10000;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+
+		display: grid;
+		grid-template:
+			[header-left] "head head head" 70px [header-right]
+			[main-left] "nav center main" 2fr [main-right]
+			[bottom-left] "nav-bottom center-bottom main-bottom" 0.5fr [bottom-right]
+			/ 0.5fr auto 0.5fr;
+		box-shadow: var(--box-shadow-40);
+		background-color: var(--clr-primary-900);
+		transition: transform 250ms ease-out;
+		transform: translateX(0%);
+
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-nav-mobile-wrapper[aria-expanded="false"] {
+		transition: transform 250ms ease-out;
+		transform: translateX(100%);
+		display: flex;
+		z-index: 1000;
+		background-color: var(--clr-primary-100);
+		margin: 0;
+		top: 0;
+		position: fixed;
+		right: 0;
+		height: 100%;
+		width: var(--sz-120);
+	}
+
+	.header-nav-mobile-sections {
+		display: flex;
+		flex-direction: column;
+		gap: var(--sz-50);
+		grid-area: center;
+		margin: auto;
+		align-items:center;
+	}
+
+	.exit {
+		grid-area: head;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: var(--sz-40);
+	}
+
+	.header-nav-mobile-importants {
+		display: flex;
+		position: absolute;
+		z-index: 0;
+		right: var(--sz-30);
+		top: 50%;
+		transform: translate(0, -50%);
+		align-items: center;
+	}
+
+	.enter:focus {
+		outline: none;
+	}
+}
+
+.header-show-products {
+	grid-area: center-bottom;
+	display: flex;
+	justify-content: center;
+	background-color: var(--clr-secondary-300);
+	padding-inline: var(--sz-70);
+	padding-block: var(--sz-30);
+}
+
+

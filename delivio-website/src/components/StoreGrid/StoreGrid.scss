@@ -1,0 +1,19 @@
+* {
+	box-sizing:border-box;
+	}
+.store-grid{
+
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%,16rem), 1fr)); 
+	width:min(100%, 1400px);
+	margin-block: var(--sz-40);
+	gap:var(--sz-70);
+	box-sizing:border-box;
+
+	margin-inline:auto;
+}
+
+
+
+
+

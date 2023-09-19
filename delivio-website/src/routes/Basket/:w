@@ -1,0 +1,373 @@
+* {
+}
+.basket-payment {
+	background-color: var(--clr-secondary-400);
+	width: max-content;
+	padding: var(--sz-50);
+	height: max-content;
+	padding-block: var(--sz-20);
+	color:var(--text-grey-000)
+}
+
+.basket-page-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.basket-page-title span {
+	text-align: center;
+	color:black
+}
+
+.basket-page {
+	width: min(90%, 1000px);
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-inline: var(--sz-50);
+	padding-block:var(--sz-50);
+	margin-block: var(--sz-50);
+	row-gap:var(--sz-70);
+}
+
+
+.basket-rectangle {
+	background-color: var(--clr-primary-400);
+	width: 100%;
+	height: var(--sz-00);
+
+}
+
+.basket-heading {
+	display: grid;
+	grid-template:
+		[header-left] "head-left head head-right" 30px [header-right]
+		/ 200px 1fr 344px;
+	padding: var(--sz-20);
+	position: relative;
+	background-color:var(--clr-primary-200);
+	align-items:center;
+}
+
+.basket-heading > :nth-child(2) {
+	grid-area: head-right;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+
+
+.basket-heading-details {
+	display: flex;
+	gap: 75px;
+	color:var(--clr-primary-800)
+}
+
+.basket-item-description span:hover {
+	color: var(--text-grey-700);
+	transition: 250ms ease-in color;
+	cursor: pointer;
+}
+
+.basket-item-entry-description {
+	span {
+		min-width:75px;
+		display:flex;
+		justify-content:center;
+		color:var(--text-grey-700)
+	}
+}
+
+.basket-page-wrapper {
+	display: grid;
+	gap:var(--sz-50);
+}
+
+.basket-item-quantity {
+	background-color: var(--clr-primary-900);
+	color: var(--clr-primary-500);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-self: end;
+	padding-inline: var(--sz-50);
+	padding-block: var(--sz-30);
+	position: relative;
+	align-self: center;
+}
+
+.quantity-form {
+	position: relative;
+}
+.quantity-label {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.basket-exit {
+	display: flex;
+	align-items: center;
+	gap: var(--sz-20);
+}
+
+.basket-item-entry {
+	display: grid;
+	align-items: center;
+	position: relative;
+	column-gap: var(--sz-20);
+	padding-inline:var(--sz-50);
+	box-shadow: var(--box-shadow-10);
+	padding-block:var(--sz-40);
+	grid-template:
+		[header-left] "head-left head head-right" 200px [header-right]
+		/ 150px 1fr 380px;
+	
+}
+
+
+
+.basket-item-entry > {
+	:nth-child(1) {
+		object-fit: contain;
+		object-position: center;
+		width: 100%;
+		height: 150px;
+		background-color: #eff0f1;
+	}
+	:nth-child(2) {
+		grid-area: head;
+		display: flex;
+		max-width: 300px;
+		width:fit-content;
+		flex-direction: column;
+		gap: var(--sz-50);
+		justify-content: space-between;
+		font-weight:520;
+		padding-block:var(--sz-20);
+		padding-inline:var(--sz-40);
+		color:black;
+		border-radius:10px;
+	}
+	:nth-child(4) {
+		display: none;
+		visibility: hidden;
+	}
+
+}
+
+.basket-item-entry-description {
+	display:flex;
+	flex-direction:row-reverse;
+	gap:var(--sz-70);
+	align-items:center;
+}
+
+	
+.basket-item-entry-description {
+	input {
+		border:solid 1px var(--clr-grey-300);
+		width:50px;
+		padding-inline:var(--sz-50);
+		padding-block:var(--sz-30);
+	}
+	
+}
+.basket-total {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 40px;
+	width:min(100%, 700px);
+	margin:auto;
+	background-color:var(--clr-grey-100);
+	padding:var(--sz-50);
+}
+
+.basket-total-section {
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	align-items:center;
+
+	
+}
+
+.basket-total > {
+	.basket-subtotal {
+		display: flex;
+		justify-content: space-between;
+		color: var(--text-grey-800);
+	}
+	.basket-total-value {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.basket-transport {
+		display: flex;
+		justify-content: space-between;
+		color: var(--text-grey-800);
+	}
+	:nth-child(n) {
+		position: relative;
+	}
+
+	:nth-child(3)::after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: var(--clr-grey-400);
+		position: absolute;
+		top: -5px;
+	}
+}
+
+.basket-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+
+
+.quantity-wrapper {
+	position:relative;
+	.error{
+		display:none;
+		visibility:hidden;
+	}
+
+	.description {
+		position:absolute;
+		top:-8px;
+		left:5px;
+		background-color:white;
+	}
+	input:valid, input:focus ~ .description { transform:translate(2px, -8px);
+		background-color:white;
+	}
+
+}
+.quantity-wrapper.invalid {
+	.error{
+		display:flex;
+		visibility:visible;
+		width:200%;
+		position:absolute;
+		left:50%;
+		transform:translate(-50%, 10px);
+		text-align:center;
+		color:red;
+	}
+
+	input {
+		border:solid 1px red;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+	.basket-page {
+		width: max(90%, 400px);
+	}
+}
+
+@media (max-width: 900px) {
+	.basket-page {
+		width: max(100%, 300px);
+		box-shadow:unset; 
+	}
+
+	.basket-page-title {
+		padding: var(--sz-50);
+		display: flex;
+		justify-content: center;
+	}
+
+	.basket-page-title > {
+		:nth-child(2) {
+			padding: var(--sz-30);
+			padding-inline: var(--sz-70);
+		}
+	}
+	.basket-heading {
+		display: none;
+		visibility: hidden;
+	}
+
+	.basket-item-entry::after {
+		width: 90%;
+	}
+
+	.basket-item-entry {
+		display: grid;
+		box-sizing: border-box;
+		align-items: center;
+		position: relative;
+		align-items: unset;
+		column-gap: var(--sz-20);
+		padding: var(--sz-50);
+		padding-bottom: var(--sz-70);
+		grid-template:
+			[header-left] "left head head" 150px [header-right]
+			[center-left] "left center-middle center" 100px [center-right]
+			[bottom-left] "left center-middle center" 50px [bottom-right]
+			/ 100px 1fr max-content;
+	}
+
+	.basket-item-entry > {
+		:nth-child(1) {
+			grid-area: left;
+			background-color: eff0f1;
+		}
+
+		:nth-child(3) {
+			grid-area: center;
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: max-content;
+			margin-left: auto;
+		}
+
+		:nth-child(3) > {
+			:nth-child(4) {
+				position: absolute;
+				bottom: 10px;
+				right: 15px;
+			}
+		}
+		:nth-child(4) {
+			display: flex;
+			visibility: visible;
+			flex-direction: column;
+			justify-content: space-around;
+			grid-area: center-middle;
+			gap: var(--sz-50);
+		}
+
+	}
+	.basket-total {
+		width: 100%;
+		margin: auto;
+		max-width: 95%;
+	}
+}
+
+
+

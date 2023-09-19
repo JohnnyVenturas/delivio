@@ -1,0 +1,503 @@
+:root {
+  --text-style-heading-90: 126.91px;
+  --text-style-heading-80: 75.54px;
+  --text-style-heading-70: 44.96px;
+  --text-style-heading-65: 35px;
+  --text-style-heading-60: 30.75px;
+  --text-style-heading-55: 25.75px;
+  --text-style-heading-50: 20.7px;
+  --text-style-heading-40: 16px;
+  --text-style-heading-35: 14px;
+  --text-style-heading-30: 10px;
+  --clr-primary-900: hsl(215, 60.8%, 10%);
+  --clr-primary-800: hsl(216, 70.6%, 20%);
+  --clr-primary-700: hsl(216, 80.4%, 30%);
+  --clr-primary-600: hsl(216, 90.2%, 40%);
+  --clr-primary-500: hsl(216, 99.2%, 50%);
+  --clr-primary-400: hsl(216, 98.9%, 64.9%);
+  --clr-primary-300: hsl(216, 100%, 80%);
+  --clr-primary-200: hsl(216, 100%, 95.1%);
+  --clr-primary-100: hsl(216, 100%, 98%);
+  --clr-primary-000: #fafcff;
+
+  /* Trinidad */
+  /* Trinidad */
+  --clr-secondary-900: lch(10% 16.8 51.98);
+  --clr-secondary-800: lch(20% 36.3 51.98);
+  --clr-secondary-700: lch(30% 52.9 51.98);
+  --clr-secondary-600: lch(40% 65.1 51.98);
+  --clr-secondary-500: lch(50% 76.8 51.98);
+  --clr-secondary-400: lch(58.02% 86.18 51.98);
+  --clr-secondary-300: lch(70% 68.4 51.98);
+  --clr-secondary-200: lch(80% 38.8 51.98);
+  --clr-secondary-100: lch(90% 15.6 51.98);
+
+  --clr-grey-900: lch(10% 1 240.52);
+  --clr-grey-800: lch(20% 1.5 240.52);
+  --clr-grey-700: lch(28.18% 1.92 240.52);
+  --clr-grey-600: lch(40% 2.4 240.52);
+  --clr-grey-500: lch(50% 2.9 240.52);
+  --clr-grey-400: lch(58% 3.2 240.52);
+  --clr-grey-300: lch(70% 3.7 240.52);
+  --clr-grey-200: lch(80% 2.6 240.52);
+  --clr-grey-100: lch(90% 1.2 240.52);
+  --clr-grey-50: lch(95% 1.2 240.52);
+  --clr-grey-000: lch(100% 1.2 240.52);
+
+  --text-grey-900: lch(10% 2 240);
+  --text-grey-800: lch(20% 2 240);
+  --text-grey-700: lch(28.18% 2 240);
+  --text-grey-600: lch(40% 2 240);
+  --text-grey-500: lch(50% 2 240);
+  --text-grey-400: lch(58% 2 240);
+  --text-grey-300: lch(70% 2 240);
+  --text-grey-200: lch(80% 2 240);
+  --text-grey-100: lch(90% 2 240);
+  --text-grey-000: lch(100% 2 240);
+
+  --sz-00: 2px;
+  --sz-10: 4px;
+  --sz-20: 8px;
+  --sz-30: 12px;
+  --sz-40: 16px;
+  --sz-50: 24px;
+  --sz-60: 32px;
+  --sz-70: 48px;
+  --sz-80: 64px;
+  --sz-90: 96px;
+  --sz-100: 128px;
+  --sz-110: 192px;
+  --sz-120: 256px;
+  --sz-130: 384px;
+  --sz-140: 512px;
+  --sz-150: 640px;
+  --sz-160: 768px;
+
+  --percentage-10: 2%;
+  --percentage-20: 3%;
+  --percentage-30: 4%;
+  --percentage-40: 6%;
+  --percentage-50: 11%;
+  --percentage-60: 15%;
+  --percentage-70: 20%;
+  --percentage-80: 26%;
+  --percentage-90: 34%;
+  --percentage-100: 45%;
+  --percentage-110: 59%;
+  --percentage-120: 77%;
+  --percentage-130: 100%;
+
+  --border-primary-000: 10px;
+  --border-primary-000: 13px;
+  --border-primary-000: 17px;
+  --border-primary-000: 23px;
+  --border-primary-000: 30px;
+  --border-primary-000: 39px;
+
+  --font-weight-00: 420;
+  --font-weight-10: 520;
+  --font-weight-20: 620;
+  --font-weight-30: 700;
+
+  --font-family: "Open Sans";
+  --border-primary-000: solid var(--sz-10) transparent;
+  --border-primary-000: solid var(--sz-10) var(--clr-primary-600);
+
+  --padding-inline-00: var(--sz-00);
+  --padding-inline-10: var(--sz-10);
+  --padding-inline-20: var(--sz-20);
+  --padding-inline-30: var(--sz-30);
+  --padding-inline-40: var(--sz-40);
+  --padding-inline-50: var(--sz-50);
+  --padding-inline-60: var(--sz-60);
+  --padding-inline-70: var(--sz-70);
+  --padding-inline-80: var(--sz-80);
+  --padding-inline-90: var(--sz-90);
+  --padding-inline-100: var(--sz-100);
+  --padding-inline-110: var(--sz-110);
+  --padding-inline-120: var(--sz-120);
+  --padding-inline-130: var(--sz-130);
+  --padding-inline-140: var(--sz-140);
+  --padding-inline-150: var(--sz-150);
+  --padding-inline-160: var(--sz-160);
+
+  --padding-block-00: var(--sz-00);
+  --padding-block-10: var(--sz-10);
+  --padding-block-20: var(--sz-20);
+  --padding-block-30: var(--sz-30);
+  --padding-block-40: var(--sz-40);
+  --padding-block-50: var(--sz-50);
+  --padding-block-60: var(--sz-60);
+  --padding-block-70: var(--sz-70);
+  --padding-block-80: var(--sz-80);
+  --padding-block-90: var(--sz-90);
+  --padding-block-100: var(--sz-100);
+  --padding-block-110: var(--sz-110);
+  --padding-block-120: var(--sz-120);
+  --padding-block-130: var(--sz-130);
+  --padding-block-140: var(--sz-140);
+  --padding-block-150: var(--sz-150);
+  --padding-block-160: var(--sz-160);
+
+  --margin-inline-00: var(--sz-00);
+  --margin-inline-10: var(--sz-10);
+  --margin-inline-20: var(--sz-20);
+  --margin-inline-30: var(--sz-30);
+  --margin-inline-40: var(--sz-40);
+  --margin-inline-50: var(--sz-50);
+  --margin-inline-60: var(--sz-60);
+  --margin-inline-70: var(--sz-70);
+  --margin-inline-80: var(--sz-80);
+  --margin-inline-90: var(--sz-90);
+  --margin-inline-100: var(--sz-100);
+  --margin-inline-110: var(--sz-110);
+  --margin-inline-120: var(--sz-120);
+  --margin-inline-130: var(--sz-130);
+  --margin-inline-140: var(--sz-140);
+  --margin-inline-150: var(--sz-150);
+  --margin-inline-00: var(--sz-00);
+
+  --margin-block-10: var(--sz-10);
+  --margin-block-20: var(--sz-20);
+  --margin-block-30: var(--sz-30);
+  --margin-block-40: var(--sz-40);
+  --margin-block-50: var(--sz-50);
+  --margin-block-60: var(--sz-60);
+  --margin-block-70: var(--sz-70);
+  --margin-block-80: var(--sz-80);
+  --margin-block-90: var(--sz-90);
+  --margin-block-100: var(--sz-100);
+  --margin-block-110: var(--sz-110);
+  --margin-block-120: var(--sz-120);
+  --margin-block-130: var(--sz-130);
+  --margin-block-140: var(--sz-140);
+  --margin-block-150: var(--sz-150);
+  --margin-block-160: var(--sz-160);
+
+  --font-clr-primary-000: hsl(47, 90%, 86%);
+  --font-clr-primary-000: hsl(46, 90%, 81%);
+  --font-clr-primary-000: hsl(45, 90%, 72%);
+  --font-clr-primary-000: hsl(43, 90%, 61%);
+  --font-clr-primary-000: hsl(39, 90%, 50%);
+  --font-clr-primary-000: hsl(37, 90%, 42%);
+  --font-clr-primary-000: hsl(32, 90%, 40%);
+  --font-clr-primary-000: hsl(29, 88%, 30%);
+  --font-clr-primary-000: hsl(26, 77%, 24%);
+  --font-clr-primary-000: hsl(27, 73%, 18%);
+  --font-clr-primary-000: hsl(25, 79%, 5%);
+
+  --font-clr-primary-000: hsl(203, 90%, 89%);
+  --font-clr-primary-000: hsl(205, 90%, 84%);
+  --font-clr-primary-000: hsl(201, 90%, 76%);
+  --font-clr-primary-000: hsl(199, 90%, 63%);
+  --font-clr-primary-000: hsl(199, 90%, 49%);
+  --font-clr-primary-000: hsl(200, 90%, 40%);
+  --font-clr-primary-000: hsl(203, 90%, 32%);
+  --font-clr-primary-000: hsl(204, 90%, 24%);
+  --font-clr-primary-000: hsl(203, 90%, 18%);
+  --font-clr-primary-000: hsl(203, 80%, 14%);
+  --font-clr-primary-000: hsl(205, 80%, 6%);
+
+  --font-clr-primary-000: hsl(0, 0%, 100%);
+  --font-clr-primary-000: hsl(0, 0%, 98%);
+  --font-clr-primary-000: hsl(0, 0%, 96.1%);
+  --font-clr-primary-000: hsl(0, 0%, 89.8%);
+  --font-clr-primary-000: hsl(0, 0%, 83.1%);
+  --font-clr-primary-000: hsl(0, 0%, 63.9%);
+  --font-clr-primary-000: hsl(0, 0%, 45.1%);
+  --font-clr-primary-000: hsl(0, 0%, 32.2%);
+  --font-clr-primary-000: hsl(0, 0%, 25.1%);
+  --font-clr-primary-000: hsl(0, 0%, 14.9%);
+  --font-clr-primary-000: hsl(0, 0%, 9%);
+  --font-clr-primary-000: hsl(0, 0%, 8%);
+
+  --box-shadow-00: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+  --box-shadow-10: 0 5px 15px hsla(1, 0%, 0%, 0.2);
+  --box-shadow-20: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+  --box-shadow-30: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+  --box-shadow-40: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+.text-style-heading-30 {
+  font-size: 10px;
+  font-family: "Lora";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-35 {
+  font-size: 14px;
+  font-family: "Lora";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-40 {
+  font-size: 16px;
+  font-family: "Lora";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-50 {
+  font-size: 17.7px;
+  font-family: "Lora";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-55 {
+  font-size: 22px;
+  font-family: "Lora";
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-60 {
+  font-size: 26.75px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-65 {
+  font-size: 35.75px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-70 {
+  font-size: 44.96px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-80 {
+  font-size: 75.54px;
+  font-family: "Lora";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+.text-style-heading-90 {
+  font-size: 126.91px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.clr-primary-900 {
+  color: hsl(215, 60.8%, 10%);
+}
+.clr-primary-800 {
+  color: hsl(216, 70.6%, 20%);
+}
+.clr-primary-700 {
+  color: hsl(216, 80.4%, 30%);
+}
+.clr-primary-600 {
+  color: hsl(216, 90.2%, 40%);
+}
+.clr-primary-500 {
+  color: hsl(216, 99.2%, 50%);
+}
+.clr-primary-400 {
+  color: hsl(216, 98.9%, 64.9%);
+}
+.clr-primary-300 {
+  color: hsl(216, 100%, 80%);
+}
+.clr-primary-200 {
+  color: hsl(216, 100%, 95.1%);
+}
+.clr-primary-100 {
+  color: hsl(216, 100%, 98%);
+}
+.clr-primary-000 {
+  color: #fafcff;
+}
+.--clr-secondary-700 {
+  color: hsl(21, 60.8%, 10%);
+}
+.clr-secondary-600 {
+  color: hsl(22, 70.6%, 20%);
+}
+.clr-secondary-500 {
+  color: hsl(21, 80.4%, 30%);
+}
+.clr-secondary-400 {
+  color: hsl(22, 90.2%, 40%);
+}
+.clr-secondary-300 {
+  color: hsl(22, 99.2%, 50%);
+}
+.clr-secondary-200 {
+  color: hsl(22, 99%, 60%);
+}
+.clr-secondary-100 {
+  color: hsl(21, 98.7%, 70%);
+}
+.clr-secondary-000 {
+  color: hsl(22, 98%, 80%);
+}
+
+.clr-grey-1000 {
+  color: hsl(0, 0%, 0%);
+}
+.clr-grey-900 {
+  color: hsl(0, 0%, 10.2%);
+}
+.clr-grey-800 {
+  color: hsl(0, 0%, 20%);
+}
+.clr-grey-700 {
+  color: hsl(0, 0%, 30.2%);
+}
+.clr-grey-600 {
+  color: hsl(0, 0%, 40%);
+}
+.clr-grey-500 {
+  color: hsl(0, 0%, 50.2%);
+}
+.clr-grey-400 {
+  color: hsl(0, 0%, 60%);
+}
+.clr-grey-300 {
+  color: hsl(0, 0%, 70.2%);
+}
+.clr-grey-200 {
+  color: hsl(0, 0%, 80%);
+}
+.clr-grey-100 {
+  color: hsl(0, 0%, 90.2%);
+}
+.clr-grey-000 {
+  color: hsl(0, 0%, 100%);
+}
+
+.box-shadow-00 {
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+}
+.box-shadow-10 {
+  box-shadow: 0 5px 15px hsla(1, 0%, 0%, 0.2);
+}
+.box-shadow-20 {
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+.box-shadow-30 {
+  box-shadow: 0 10px 24px hsla(0, 0%, 0%, 0.2);
+}
+.box-shadow-40 {
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+}
+
+.active {
+  color: var(--clr-primary-400);
+}
+
+.border-radius-00 {
+  border-radius: 2px;
+}
+
+.border-radius-10 {
+  border-radius: 4px;
+}
+
+.border-radius-20 {
+  border-radius: 8px;
+}
+
+.border-radius-30 {
+  border-radius: 12px;
+}
+
+.border-radius-40 {
+  border-radius: 16px;
+}
+.padding-00 {
+  padding: 0;
+}
+
+.font-weight-00 {
+  font-weight: 350;
+}
+.font-weight-10 {
+  font-weight: 400;
+}
+.font-weight-20 {
+  font-weight: 520;
+}
+.font-weight-30 {
+  font-weight: 620;
+}
+.font-weight-40 {
+  font-weight: 700;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  color: inherit;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input {
+  all: unset;
+}
+
+select {
+  all: unset;
+}
+
+body {
+  background-color: white;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: 10em;
+}
+form {
+  all: unset;
+}
+
+label {
+  color: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}

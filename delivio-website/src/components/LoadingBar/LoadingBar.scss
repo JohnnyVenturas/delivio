@@ -1,0 +1,16 @@
+.loading-bar[aria-expanded="true"] {
+	display:block;
+	visibility:visible;
+	width: calc(var(--width, 0) * 1%); 
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:10000000;
+	height: var(--sz-10);
+	border-radius:10px;
+	background-color:var(--clr-primary-500);
+	box-shadow:0px 1px 2px hsla(216, 99.2%, 50%, 0.3);
+	transition: width 200ms cubic-bezier(0.86, 0, 0.07, 1) ;
+
+}
+

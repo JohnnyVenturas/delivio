@@ -1,0 +1,27 @@
+.search-bar-wrapper {
+	padding-inline:var(--sz-30);
+	color:hsl(0 0 100 / 0.5);
+	width:100%;
+	position:relative;
+	
+
+}
+input {
+	all:unset;
+	background-color: black;
+	width:100%;
+	padding-inline:var(--sz-10);
+	
+}
+
+::placeholder {
+	color:white;
+	opacity:0.5;
+}
+
+.svg-wrapper {
+	position:absolute;
+	top:2px;
+	right:var(--sz-20);
+}
+
